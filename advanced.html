@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced Search</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="navi">
+      <a href="index.html">Google Search</a>
+      <a href="images.html">Image Search</a>
+    </div>
+    
+    <div class="advsearch"></div>
+
+    <div class="apbar">
+      <table>
+        <tr>
+          <td>Advanced Search</td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+
+   <hr>
+
+    <div id="form_advanced"> <!-- TAULUKKO -->
+      <table>
+      <form action="https://google.com/search" method="get">
+        <tr class="eka">
+        <td>Find pages with...</td>
+        <td></td>
+        </tr>
+
+        <tr>
+        <td><label for="haku_all">all these words:</label></td>
+        <td><input class="advanced" id="haku_all" type="text" value autofocus autocomplete="off" name="as_q" /></td>
+      </tr>
+
+      <tr>
+        <td><label for="haku_exact">this exact word or phrase:</label></td>
+        <td><input class="advanced" id="haku_exact" type="text" autocomplete="off" name="as_epq" /></td>
+      </tr>
+
+      <tr>
+       <td><label for="haku_any">any of these words:</label></td>
+        <td><input class="advanced" id="haku_any" type="text" autocomplete="off" name="as_oq" /></td>
+      </tr>
+
+      <tr>
+        <td><label for="haku_none">none of these words:</label></td>
+        <td><input class="advanced" id="haku_none" type="text" autocomplete="off" name="as_eq" /></td>
+      </tr>
+
+      <tr>
+        <td></td>
+        <td><input id="submit-btn-as" type="submit" value="Advanced Search" /></td>
+      </tr>
+      </form>
+    </table>
+    </div>
+
+  </body>
+</html>
